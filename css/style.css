@@ -53,11 +53,6 @@ body {
     margin-bottom: 4rem;
 }
 
-.projetos {
-    max-width: 886px;
-    box-sizing: border-box;
-}
-
 .sobre {
     max-width: 886px;
     box-sizing: border-box;
@@ -66,6 +61,11 @@ body {
 .sobre ul {
     margin-top: 3rem;
     color: #606060;
+}
+
+.projetos {
+    max-width: 886px;
+    box-sizing: border-box;
 }
 
 .projetos ul {
@@ -78,6 +78,14 @@ body {
     text-align: left;
     gap: 1rem;
     color: #606060;
+}
+
+/* .projetos li + li {
+    margin-top: 2rem;
+} */
+
+.projetos img {
+    border-radius: 10px;
 }
 
 .projetos h2 {
@@ -105,4 +113,11 @@ body {
 
 .icons li {
     margin-right: 1rem;
+}
+
+.copyright {
+    font-size: 24px;
+    color: white;
+    text-shadow: 2px 2px 16px black;
+    margin: 20vh 0;
 }

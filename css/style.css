@@ -24,9 +24,19 @@ body {
     color: #aeaeae;
 }
 
+.container {
+    padding: 0 16px;
+}
+
 .title{
     font-size: 36px;
     font-weight: normal;
+}
+
+.profile {
+    max-width: 452px;
+    box-sizing: border-box;
+    margin: 0 auto;
 }
 
 .box {
@@ -74,7 +84,7 @@ body {
 
 .projetos li {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
     text-align: left;
     gap: 1rem;
     color: #606060;
@@ -119,5 +129,38 @@ body {
     font-size: 24px;
     color: white;
     text-shadow: 2px 2px 16px black;
-    margin: 20vh 0;
+    margin-top: 20vh 0;
+    padding-bottom: 20vh 0;
+    text-align: center;
+}
+
+@media(max-width: 600px) {
+    body {
+        background-attachment: initial;
+        background-size: contain;
+        background-color: #f0e6da;
+    }
+    .box {
+        padding: 2rem;
+        margin-top: 4rem;
+        border-radius: 30px;
+    }
+    .box:first-child {
+        padding: 3rem;
+    }
+    .projetos ul {
+        margin-top: 1rem;
+    }
+    .projetos li {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    .projetos li div {
+        max-width: 448px;
+    }
+    .copyright {
+        font-size: 18px;
+        margin: 0;
+        padding: 4rem 0;
+    }
 }

@@ -31,6 +31,7 @@ body {
 .title{
     font-size: 36px;
     font-weight: normal;
+    color: black;
 }
 
 .profile {
@@ -41,7 +42,7 @@ body {
 
 .box {
     background: #eee;
-    padding: 4rem;
+    padding: 5rem;
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
     border-radius: 50px;
     text-align: center;
@@ -90,10 +91,6 @@ body {
     color: #606060;
 }
 
-/* .projetos li + li {
-    margin-top: 2rem;
-} */
-
 .projetos img {
     border-radius: 10px;
 }
@@ -106,6 +103,8 @@ body {
 .contato {
     max-width: 886px;
     box-sizing: border-box;
+    margin-bottom: 5rem;
+    justify-items: center;
 }
 
 .contato ul {
@@ -138,7 +137,7 @@ body {
     body {
         background-attachment: initial;
         background-size: contain;
-        background-color: #f0e6da;
+        background-color: #000000;
     }
     .box {
         padding: 2rem;
@@ -148,6 +147,11 @@ body {
     .box:first-child {
         padding: 3rem;
     }
+
+    .sobre ul {
+        margin-top: 1rem;
+    }
+
     .projetos ul {
         margin-top: 1rem;
     }

@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
 li {
     list-style: none;
 }
@@ -17,19 +22,29 @@ body {
     color: #aeaeae;
 }
 
+.container {
+    padding: 0 16px;
+}
+
 .title{
     font-size: 36px;
     font-weight: normal;
     color: black;
 }
 
+.capa {
+    max-width: 700px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
 .box {
     background: #eee;
-    padding: 9rem;
+    padding: 5rem;
     box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
     border-radius: 50px;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 8rem;
 }
 
 .projeto-picture {
@@ -37,23 +52,88 @@ body {
     margin: 0 auto 2rem auto;
 }
 
-.layout {
+.sobre {
     max-width: 886px;
     box-sizing: border-box;
 }
 
-.layout ul {
+.sobre ul {
     margin-top: 3rem;
     color: #606060;
+}
+
+.tecnologias {
+    max-width: 886px;
+    box-sizing: border-box;
+}
+
+.tecnologias ul {
+    margin-top: 3rem;
+    color: #606060;
+}
+
+.telasProjeto {
+    max-width: 886px;
+    box-sizing: border-box;
+    display: grid;
+    justify-content: center;
 }
 
 .telas {
     margin-top: 3rem;
 }
 
+.layoutEnd {
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.titleEnd {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+    font-size: 36px;
+    font-weight: normal;
+    color: yellow;
+}
+
 .copyright {
     font-size: 24px;
     color: white;
     text-shadow: 2px 2px 16px black;
-    margin: 20vh 0;
+    margin-top: 20vh 0;
+    padding-bottom: 20vh 0;
+    text-align: center;
+}
+
+@media(max-width: 600px) {
+    .box {
+        padding: 2rem;
+        margin-top: 4rem;
+        border-radius: 30px;
+    }
+    .box:first-child {
+        padding: 3rem;
+    }
+
+    .sobre ul {
+        margin-top: 1rem;
+    }
+
+    .tecnologias ul {
+        margin-top: 1rem;
+    }
+
+    .telasProjeto ul {
+        margin-top: 1rem;
+    }
+
+    .telasProjeto div {
+        max-width: 580px;
+    }
+    
+    .copyright {
+        font-size: 18px;
+        margin: 0;
+        padding: 4rem 0;
+    }
 }
